@@ -21,24 +21,60 @@
             </li>          
         </ul>
     </div>
-</nav>
+</nav> 
 <body>
     <div class="about_me_header_padding" id="about_me_href"></div>
-    <div class="section_container">
-        <h2 class="header">About Me</h2>
-        <div class="d-flex">
-            <div class="selfie_container">
-                <img class="selfie" src="./assets/tmp.png">
-            </div>
-            <p class="weird_area_of_text_next_to_picture">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis distinctio ab, numquam at nemo impedit soluta velit adipisci suscipit veritatis, culpa corporis veniam ipsum omnis quisquam vero aspernatur eum. Eum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum quis animi mollitia recusandae voluptatem culpa. Tempora fugit aliquid, atque excepturi minus eius dignissimos alias officiis consequuntur, corporis suscipit ex neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima magnam nostrum nam quae aliquam omnis possimus ullam, sit quasi molestiae sint deleniti temporibus laborum cum, dolorem eveniet eum ratione perspiciatis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi unde molestiae quibusdam voluptatem, necessitatibus excepturi blanditiis consectetur quaerat omnis assumenda est. Est exercitationem animi sint ipsam deleniti voluptas aliquid nisi.</p>
-        </div>
-    </div>
     
     <div class="section_seperator" id="my_projects_href"></div>
 
-    <div class="section_container test">
-        <h2 class="header">My Projects</h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur rem deserunt voluptas unde id quisquam, labore quibusdam ut itaque aspernatur. Nihil modi laudantium adipisci aperiam tenetur inventore optio temporibus minus. </p>
+    <div class="section_container">
+        <h1 class="header">My Projects</h1>
+
+        <div class="project_container">
+            <h2 class="subheader">Tasks App: 
+                <a  href="https://github.com/Cloudiz1/simple-to-do-list" class="github_redirect" target="_blank">Source</a>
+            </h2>
+
+            <div class="to_do_list_display_container float_left">
+                <img src="./assets/to-do-list-showcase.png" class="to_do_list_showcase">
+            </div>
+            <p class="project_description">I would consider this simple task list the first project I made. At the time, I thought a simple application to communicate between frontend and backend would teach me much more about node.js and web development as a whole. Moreover, I had wanted a simple and clean place to store my daily tasks. The app works quite simply. On startup, all tasks with the proper information will be displayed with each task having a respective card. Adding a task is as simple as pressing a button in the top left corner and filling out a few fields. On the backend, it stores the tasks in a .json file and will read and write to it when necessary. 
+            </p>
+        </div>
+        
+        <div class="project_container">
+            <h2 class="subheader">
+                Notes App: 
+                <a class="github_redirect" href="https://github.com/Cloudiz1/notes-app" target="_blank">Source</a>
+            </h2>
+            
+            <div>do image stuff later</div>
+            <p class="project_description">I originally made this to take digital notes more efficiently. I was originally inspired by <a href="https://www.youtube.com/watch?v=DOtM1mrWjUo" class="redirect" target="_blank">this video</a> where a math major with the online alias "SeniorMars" demonstrates how to take notes with Vim and LaTeX. Around this time, my fall classes had just started and I wanted to try online notes for once. With this motivation, I created this application which has syntax similiar to HTML. Moreover, it generates a table of contents and supports images, lists, LaTeX, and more.</p>
+
+            <p class="project_description">To take notes, one simply edits a .txt file. On the backend, a lexer first parses the file into managable tokens. These tokens generate HTML elements through a simple switch case statement. A list keeps track of major headers and subheaders and their ids. Using this list, a simple table of contents can be generated. </p>
+        </div>
+
+        <div class="project_container">
+            <h2 class="subheader">Simple Bootup Script: 
+                <a href="https://github.com/Cloudiz1/bootup-script" class="github_redirect" target="_blank">
+                    Source
+                </a>
+            </h2>
+            <p class="project_description">This project idea came as a result of a small inconvienence. I commonly use Spotify to play music and Discord to communicate with my friends. Although both of these apps are great on their own, I prefer to modify them with third-party extensions. I used both Spicetify and BetterDiscord, which both provides their respective applications with a marketplace and API. I would often have to reinject or reinstall the extension entirely. As a result of this, I thought I should make a script to do that on startup. </p>
+
+            <p class="project_description">Spicetify was easy. Their CLI offers a built in command to update and inject Spicetify. All I had to do was run a command on terminal. BetterDiscord, however, was less simple. The solution I came up with was to check the github repository for an update via web scraping. If a new version was detected, I would run the installation script. Unfortunately, I had presumed each time Discord launched without the third-party extention meant that Discord had updated and subsequently broken BetterDiscord. This does not appear to be the case as the github repository updates infrequently. Despite this oversight, I don't regret this project as it taught me web scraping, parsing data, and more</p>
+        </div>
+
+        <div class="project_container">
+            <h2 class="subheader">Spotacent 2: 
+                <a href="https://github.com/Cloudiz1/Spotacent2" class="github_redirect" target="_blank">Source</a>
+            </h2>
+            <p class="project_description">Once more, this project started due to yet another small problem. I had realized that Spotify does not support playing music while offline unless the user has purchased the premium plan. Unfortunately, plane rides do not come bundled with free internet nor Spotify premium. My solution? Build an entire music player from the ground up.</p>
+
+            <p class="project_description">The project found on github is actually my second attempt at this. Originally, I had opted for a visual GUI. After deciding my code was inadequate, I decided to restart and opt for a command line application instead. </p>
+
+            <p class="project_description">Spotacent supports a number of features such as creating playlists, adding songs, changing settings (volume, looping, shuffling), skipping, pausing, unpausing, and more. It works by extracting the audio of a YouTube video into a .wav file. From there, it uses the python module Pygame to play the audio files. This project posed a number of unique challenges and taught me threading as well as building command line interfaces.</p>
+        </div>
     </div>
 </body>
 </html>

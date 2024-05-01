@@ -9,6 +9,7 @@
 .section_container {
     width: 70%;
     margin: auto;
+    border: solid 2px red
 }
 
 .section_seperator {
@@ -19,33 +20,48 @@
     margin-left: 10px;
 }
 
-.selfie_container {
-    width: 250px;
-    height: 310px;
-    margin-bottom: 20px;
+.subheader {
+    margin-left: 12px;
+    margin-top: 5px;
+}
+
+.float_left {
+    float: left;
     margin-right: 20px;
-    display: inline-block;
+    margin-bottom: 5px;
 }
 
-.selfie {
+.float_right {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.to_do_list_display_container {
+    width: 22vw;
+}
+
+.to_do_list_showcase {
+    width: 100%;
+    height: 100%;
     object-fit: fill;
-    width: 100%;
-    height: 100%;
+    border: 2px solid blue;
 }
 
-.weird_area_of_text_next_to_picture {
-    width: 60%;
-    display: inline-block;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    text-align: justify;
+.caption {
+    font-size: 8px;
+    justify-content: center;
 }
 
-.start_of_about_me {
-    width: 100%;
-    height: 100%;
+.project_description {
+    font-size: calc(1.65 * (.5vw + .5vh));
 }
 
-.test {
-    margin-bottom: 999px;
+.github_redirect, .redirect {
+    text-decoration: none;
+}
+
+.project_container {
+    margin-bottom: 50px;
+    margin-left: 20px
 }

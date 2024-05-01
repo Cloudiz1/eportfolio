@@ -1,0 +1,4 @@
+flip the order of the projects to most recent to least recent
+dynamic font size on headers and subheaders
+move navbar to the left and reorganize as a table of contents?
+make some fun backgrounds and banners?
