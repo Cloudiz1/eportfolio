@@ -1,5 +1,87 @@
-#top_navbar {
+* {
+    color: #1A1B25;
+}
+
+.main_content {
+    transition: all 300ms ease-in-out;
+}
+
+.sidebar {
+    z-index: 999;
+    position: fixed;
+    background-color: #e69cab;
+    border-right: solid 45px lightpink;
+    height: 100%;
+    top: 0px;
+    width: 375px;
+    left: -410px;
+    transition: 
+        left 200ms ease-in-out,
+        opacity 200ms ease-out;
+}
+
+.sidebar_link_container {
+    width: 100%;
+    padding-left: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.sidebar_link {
+    text-decoration: none;
+    font-size: 32px;
+    color: black;
+    transition: all 150ms ease-out;
+}
+
+.sidebar_link:hover {
+    color: white;
+}
+
+.close_button_container {
+    top: -160px;
+    left: 293px;
+
+    position: relative;
+    width: 70px;
+    height: 70px;
+    border: none;
+    
+    z-index: 999;
+    opacity: 0;
+    transform: scale(0);
+    background-color: #eb7a92;
+    border-radius: 100%;
+    transition: 
+        background-color 150ms ease-out,
+        box-shadow 150ms ease-out,
+        transform 225ms ease-out,
+        opacity 60ms linear;
+}
+
+.close_button_container:hover {
     background-color: #EE4266;
+    box-shadow: #1A1B25 0px 1px;
+}
+
+.open_button_container {
+    z-index: 998;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    border: none;
+    background-color: white;
+    transition: all 100ms linear;
+}
+
+.open_button_container:hover {
+    transform: scale(1.1);
+}
+
+.close_button, .open_button {
+    position: relative;
+    font-size: 30px;
+    left: .5px;
 }
 
 .about_me_header_padding {
@@ -26,6 +108,7 @@
     padding-left: 7px;
     font-size: calc(1.75 * (0.75vw + 0.75vh));
     border-left: solid #EE4266 .35vw;
+    margin-bottom: 10px;
 }
 
 .float_left {
@@ -43,6 +126,7 @@
 .to_do_list_display_container {
     width: 25vw;
     box-shadow: .4vw .3vw #EE4266;
+    margin-right: 30px;
 }
 
 .to_do_list_showcase {
@@ -83,4 +167,5 @@
 
 .contact_information {
     margin-left: 20px;
+    font-size: calc(1.65 * (.5vw + .5vh));
 }
