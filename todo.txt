@@ -1,4 +1,7 @@
-flip the order of the projects to most recent to least recent
-dynamic font size on headers and subheaders
-move navbar to the left and reorganize as a table of contents?
+flip the order of the projects to most recent to least recent (done)
+dynamic font size on headers and subheaders (done?)
+move navbar to the left and reorganize as a table of contents? (done)
 make some fun backgrounds and banners?
+add captions to the images
+actually fill out the about me section lmfao
+add a font 

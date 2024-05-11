@@ -9,11 +9,10 @@
 .sidebar {
     z-index: 999;
     position: fixed;
-    background-color: #e69cab;
-    border-right: solid 45px lightpink;
+    background-color: #f0a5b4;
     height: 100%;
     top: 0px;
-    width: 375px;
+    width: 330px;
     left: -410px;
     transition: 
         left 200ms ease-in-out,
@@ -50,7 +49,7 @@
     z-index: 999;
     opacity: 0;
     transform: scale(0);
-    background-color: #eb7a92;
+    background-color: #e9708b;
     border-radius: 100%;
     transition: 
         background-color 150ms ease-out,
@@ -113,26 +112,18 @@
 
 .float_left {
     float: left;
-    margin-right: 20px;
-    margin-bottom: 5px;
+    box-shadow: .4vw .3vw #EE4266;
+    margin-right: 1.25vw
 }
 
 .float_right {
     float: right;
-    margin-left: 20px;
-    margin-bottom: 5px;
+    box-shadow: -.4vw .3vw #EE4266;
+    margin-left: 1.25vw
 }
 
 .to_do_list_display_container {
     width: 25vw;
-    box-shadow: .4vw .3vw #EE4266;
-    margin-right: 30px;
-}
-
-.to_do_list_showcase {
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
 }
 
 .caption {
@@ -168,4 +159,27 @@
 .contact_information {
     margin-left: 20px;
     font-size: calc(1.65 * (.5vw + .5vh));
+}
+
+.contact_me {
+    margin-bottom: 80px;
+}
+
+footer {
+    height: 20vh;
+}
+
+.notes-app-showcase-container {
+    width: 40vw;
+    margin-bottom: 10px;
+}
+
+.spotacent-app-showcase-container {
+    width: 35vw;
+}
+
+.image-showcase {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
