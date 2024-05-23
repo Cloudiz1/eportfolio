@@ -15,6 +15,9 @@
 <nav class="sidebar">
     <div class="sidebar_link_container">
         <a href="#about_me_href" class="sidebar_link" onclick="close_sidebar()">About Me</a>
+        <button class="close_button_container" onclick="close_sidebar()">
+            <i class="fa-solid fa-x close_button"></i>
+        </button>
     </div>
     <div class="sidebar_link_container">
         <a href="#my_projects_href" class="sidebar_link" onclick="close_sidebar()">My Projects</a>
@@ -22,9 +25,6 @@
     <div class="sidebar_link_container">
         <a href="#contact_me_href" class="sidebar_link" onclick="close_sidebar()">Contact Me</a>
     </div>
-    <button class="close_button_container" onclick="close_sidebar()">
-        <i class="fa-solid fa-x close_button"></i>
-    </button>
 </nav>
 <body>
     <div class="main_content">
@@ -37,10 +37,16 @@
         <div class="section_seperator" id="my_projects_href"></div>
 
         <div class="section_container">
-            
             <h1 class="header">My Projects</h1>
-
             <p class="my_project_header_description project_description">The following is a brief look into my past projects ordered from most recent to least recent.</p>
+
+            <div class="project_container">
+                <h2 class="subheader">Simple CLI Builder: 
+                    <a href="https://github.com/Cloudiz1/Spotacent2" class="github_redirect" target="_blank">Source</a>
+                </h2>
+
+                <p class="project_description">I've used CLI's for a couple of my past projects and thought it would be a good idea to make a simple package </p>
+            </div>
 
             <div class="project_container">
                 <h2 class="subheader">Spotacent 2: 
