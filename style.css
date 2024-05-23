@@ -193,3 +193,12 @@ footer {
     color: #747474;
     text-align: center;
 }
+
+.markdown {
+    background-color: #ebebeb;
+    width: 95%;
+    padding: 10px;
+    border-radius: 15px;
+    border: solid 2px #EE4266;
+    margin: auto;
+}
