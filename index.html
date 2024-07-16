@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/c400fd927b.js" crossorigin="anonymous"></script>
     <script src="main.js" defer></script>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
 </head>
 <button class="open_button_container" onclick="open_sidebar()">
     <i class="fa-solid fa-bars open_button"></i>
@@ -39,6 +40,39 @@
         <div class="section_container">
             <h1 class="header">My Projects</h1>
             <p class="my_project_header_description project_description">The following is a brief look into my past projects ordered from most recent to least recent.</p>
+
+            <div class="project_container">
+                <h2 class="subheader">Simple CLI Builder: 
+                    <a href="https://github.com/Cloudiz1/simple_CLI_builder" class="github_redirect" target="_blank">Source</a>
+                    <a href="https://pypi.org/project/simple-CLI-builder/" class="redirect" target="_blank">PyPi</a>
+                </h2>
+
+                <p class="project_description">I've used CLI's for a couple of my past projects and thought it would be a good idea to make a simple package to speed up the CLI creating process. The easiest solution I could think of is to make a simple package with a CLI class which would help with parsing inputs and creating "tokens." Moreover, the package would handle predefined commands as well as simple error checking and raise errors to allow for customizable error handling. </p>
+
+                <p class="project_description">Example code using the class:
+                    <div class="markdown">
+                        <md-block>
+```python
+from simple_CLI_builder import *
+
+app = CLI()
+app.json_to_lookup('defined_functions.json')
+
+while True:
+    app.parse_input(input("> "))
+
+    match app.current_command.properties.name:
+        case 'help':
+            app.help() # Prints all command names along with their syntax
+                       # This is a predefined function in the class
+
+        case 'hello':
+            print('Hello, world!') 
+```
+                        </md-block>
+                    </div>
+                </p>
+            </div>
 
             <div class="project_container">
                 <h2 class="subheader">Spotacent 2: 

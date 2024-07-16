@@ -5,3 +5,5 @@ make some fun backgrounds and banners?
 add captions to the images
 actually fill out the about me section lmfao
 add a font 
+
+markdown looks kind of bland, should do something about that(maybe just remake it in html tbh)
